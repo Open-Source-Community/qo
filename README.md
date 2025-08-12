@@ -4,6 +4,8 @@ A tool for creating customizable sandboxed Linux environments for educational te
 
 `qo` enables instructors to create secure and reproducible testing environments where students can complete coding challenges in isolated Linux sandboxes. The tool provides complete control over available commands and binaries while automatically generating detailed evaluation reports.
 
+This fork is the version of the tool used in OSC's Linux summer training '25.
+
 ## Features
 
 - **Secure Sandboxing**: Creates isolated Linux environments using namespaces for safe student testing
@@ -22,7 +24,7 @@ A tool for creating customizable sandboxed Linux environments for educational te
 Run this command to install `qo`.
 
 ```bash
-curl -fsSL  https://raw.githubusercontent.com/ahmedYasserM/qo/main/scripts/install.sh | bash
+curl -fsSL  https://raw.githubusercontent.com/Open-Source-Community/qo/main/scripts/install.sh | bash
 ```
 
 ## Quick Start
