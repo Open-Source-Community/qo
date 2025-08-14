@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-REPO_URL="https://github.com/ahmedYasserM/qo.git"
+REPO_URL="https://github.com/Open-Source-Community/qo.git"
 APP_NAME="qo"
 INSTALL_PATH="/usr/local/bin/$APP_NAME"
 
