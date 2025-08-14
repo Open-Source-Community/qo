@@ -23,8 +23,9 @@ var embeddedRootfs []byte
 const target = "/tmp"
 
 var (
-	Rootfs      string = filepath.Join(target, "rootfs")
 	defaultUser string = "ahmed"
+	Rootfs      string = filepath.Join(target, "rootfs")
+
 )
 
 // PathExists checks if a file or directory exists.
@@ -92,6 +93,13 @@ func ExtractRootfs() error {
 			}
 		}
 	}
+	if err := os.Chmod(filepath.Join(Rootfs, "tmp"), 0o1777); err != nil {
+		return err
+	}
+	if err := os.Chown(filepath.Join(Rootfs, "tmp"), 0, 0); err != nil {
+		return err
+	}
+
 	return nil
 }
 
