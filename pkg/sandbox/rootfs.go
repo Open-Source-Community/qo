@@ -23,7 +23,7 @@ var embeddedRootfs []byte
 const target = "/tmp"
 
 var (
-	defaultUser string = "ahmed"
+	defaultUser string = "root"
 	Rootfs      string = filepath.Join(target, "rootfs")
 
 )
